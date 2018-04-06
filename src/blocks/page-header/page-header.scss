@@ -5,4 +5,7 @@
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
+
+  position: static;
+  z-index: 1000;
 }

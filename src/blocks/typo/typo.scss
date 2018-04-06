@@ -5,8 +5,8 @@ $gray:                        hsl(0, 0%, 50%) !default;
 $gray-lighter:                hsl(0, 0%, 80%) !default;
 $gray-lightest:               hsl(0, 0%, 90%) !default;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif !default;
-$font-family--headings:       $font-family !default;
+$font-family:                 'Raleway', 'Arial', sans-serif;
+$font-family--headings:       'GoudyOld';
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !default;
 
 $font-size:                   14px !default;
@@ -38,7 +38,21 @@ $border-radius:               3px !default;
 //   font-style: normal;
 // }
 
+@font-face {
+  font-family: 'GoudyOld';
+  src:  url('../fonts/GoudyOld.woff') format('woff'),
+        url('../fonts/GoudyOld.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Raleway';
+  src:  url('../fonts/Raleway-Regular.woff') format('woff'),
+        url('../fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   // ТОЛЬКО типографика!
@@ -61,7 +75,7 @@ h4,
 h5,
 h6 {
   font-family: $font-family--headings;
-  font-weight: 700;
+  font-weight: 400;
   line-height: $line-height;
   color: currentColor;
 }

@@ -9,17 +9,10 @@
     "url": "https://github.com/nicothin/NTH-start-project.git"
   },
   "scripts": {
-    "test:style": "stylelint \"src/**/*.scss\" --syntax=scss",
     "test:orpho": "yaspeller -e \".md,.html\" ./src/",
     "start": "gulp",
     "deploy": "cross-env NODE_ENV=production ./node_modules/.bin/gulp build && cross-env ./node_modules/.bin/gulp deploy",
     "build": "cross-env NODE_ENV=production npm start build",
-    "lint-staged": "lint-staged",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.css": "stylelint",
-    "*.scss": "stylelint --syntax=scss"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",
