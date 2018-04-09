@@ -43,7 +43,7 @@
 <meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
 <meta name="msapplication-config" content="/img/browserconfig.xml">
 <meta name="theme-color" content="#ffffff"></head>
-<body>
+<body class="bg-dark">
   <div class="page__inner">
     <div class="page__content">
       <header class="page-header" role="banner">
@@ -85,12 +85,18 @@
           </div>
         </div>
       </header>
-      <div class="banner-box home-banner-1">
-        <img src="img/banner-1_s.jpg" alt="" class="banner-img">
+      <div class="intro-banner" style="background-image: url('img/banner-1.jpg');">
+        <div class="intro-banner__inner">
+          <h1 class="progect-name">Усадьба</h1>
+          <span class="project-details">Россия, Москва</span>
+        </div>
       </div>
-      <section class="history-box" style="background-image: url('img/history-box.jpg');">
+      <!-- <div class="banner-box home-banner-1">
+        <img src="img/banner-1_s.jpg" alt="" class="banner-img">
+      </div> -->
+      <section class="history-box">
         <div class="container">
-          <h1 class="heading">О нас</h1>
+          <h1 class="heading">О проекте</h1>
           <div class="history-box__text">
             <p>Для компании Green Park ландшафтный дизайн – не работа,
             а искусство, способ самовыражения. Выполняя каждый заказ, мы
@@ -101,123 +107,36 @@
             стараемся превзойти ожидания клиента. Ландшафтный дизайн от
             Green Park – это европейское качество по российским ценам</p>
           </div>
-          <a class="more" href="#">
-            <span>Подробнее</span>
-            <svg class="icon" width="49" height="31">
-              <use xlink:href="img/sprite-svg.svg#icon-next"/>
-            </svg>
-          </a>
         </div>
       </section>
       <div class="banner-box home-banner-2">
         <img src="img/banner-2_s.jpg" alt="" class="banner-img">
       </div>
-      <div class="news-box">
-        <div class="news-box__header">
-          <h2 class="heading-decor">Новости <a class="more" href="#">Все новости</a></h2>
-        </div>
-        <div class="news-box__body">
-          <div class="news-box-card">
-            <div class="news-box-card__image">
-              <img src="img/banner-1.jpg" alt="">
-            </div>
-            <div class="news-box-card__body">
-              <p>Для компании Green Park ландшафтный дизайн – не работа,
-              а искусство, способ самовыражения. Выполняя каждый заказ, мы
-              стараемся превзойти ожидания клиента. Ландшафтный дизайн от
-              Green Park – это европейское качество по российским ценам</p>
-              <div class="meta">
-                <span class="posted">15.01.2018</span>
-                <a class="more" href="#">
-                  <svg class="icon" width="25" height="22">
-                    <use xlink:href="img/sprite-svg.svg#icon-more"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="news-box-card">
-            <div class="news-box-card__image">
-              <img src="img/banner-2.jpg" alt="">
-            </div>
-            <div class="news-box-card__body">
-              <p>Для компании Green Park ландшафтный дизайн – не работа,
-              а искусство, способ самовыражения. Выполняя каждый заказ, мы
-              стараемся превзойти ожидания клиента. Ландшафтный дизайн от
-              Green Park – это европейское качество по российским ценам</p>
-              <div class="meta">
-                <span class="posted">15.01.2018</span>
-                <a class="more" href="#">
-                  <svg class="icon" width="25" height="22">
-                    <use xlink:href="img/sprite-svg.svg#icon-more"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="news-box-card">
-            <div class="news-box-card__image">
-              <img src="img/banner-3.jpg" alt="">
-            </div>
-            <div class="news-box-card__body">
-              <p>Для компании Green Park ландшафтный дизайн – не работа,
-              а искусство, способ самовыражения. Выполняя каждый заказ, мы
-              стараемся превзойти ожидания клиента. Ландшафтный дизайн от
-              Green Park – это европейское качество по российским ценам</p>
-              <div class="meta">
-                <span class="posted">15.01.2018</span>
-                <a class="more" href="#">
-                  <svg class="icon" width="25" height="22">
-                    <use xlink:href="img/sprite-svg.svg#icon-more"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
+      <div class="media-box">
+        <div class="container">
+          <div class="embed-responsive  embed-responsive--16-9">
+            <iframe src="https://www.youtube.com/embed/HNpLuXOg7xQ" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-      <div class="banner-box home-banner-3">
-        <img src="img/banner-3_s.jpg" alt="" class="banner-img">
+      <div class="progect-gallery">
+        <div class="progect-gallery__item" style="background-image: url('img/banner-1.jpg');"></div>
+        <div class="progect-gallery__item" style="background-image: url('img/banner-2.jpg');"></div>
+        <div class="progect-gallery__item" style="background-image: url('img/banner-3.jpg');"></div>
       </div>
-      <div class="project-box">
-        <div class="project-box__header">
-          <div class="carousel-nav prev">
-            <svg class="icon" width="49" height="31">
-              <use xlink:href="img/sprite-svg.svg#icon-prev"/>
-            </svg>
-          </div>
-          <h2 class="heading-decor">Наши проекты</h2>
-          <div class="carousel-nav next">
-            <svg class="icon" width="49" height="31">
-              <use xlink:href="img/sprite-svg.svg#icon-next"/>
-            </svg>
-          </div>
-        </div>
-        <div class="project-box__body">
-          <div class="owl-carousel project-carousel">
-            <div class="link-card">
-              <a class="link-card__wrap" href="#" style="background-image: url(img/banner-1.jpg);">
-                <div class="link-card__inner">
-                  <span class="link-card__btn">Усадьба</span>
-                </div>
-              </a>
-            </div>
-            <div class="link-card">
-              <a class="link-card__wrap" href="#" style="background-image: url(img/banner-2.jpg);">
-                <div class="link-card__inner">
-                  <span class="link-card__btn">Дом в лесу</span>
-                </div>
-              </a>
-            </div>
-            <div class="link-card">
-              <a class="link-card__wrap" href="#" style="background-image: url(img/banner-3.jpg);">
-                <div class="link-card__inner">
-                  <span class="link-card__btn">Цветочный сад</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="progect-pager">
+        <a href="#" class="progect-pager__item prev">
+          <svg class="icon" width="49" height="31">
+            <use xlink:href="img/sprite-svg.svg#icon-prev"/>
+          </svg>
+          <span>Предыдущий проект</span>
+        </a>
+        <a href="#" class="progect-pager__item next">
+          <span>Следующий проект</span>
+          <svg class="icon" width="49" height="31">
+            <use xlink:href="img/sprite-svg.svg#icon-next"/>
+          </svg>
+        </a>
       </div>
       <!-- <main role="main">
         <h1>Главный заголовок</h1>
