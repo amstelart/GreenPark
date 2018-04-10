@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Green Park</title>
+  <meta name="description" content=""> <!--DEV Такой комментарий не попадет в собранный HTML
+<meta name="viewport" content="width=1000">
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link href="css/style.min.css" rel="stylesheet" media="screen">
+<script>
+  // Маркер работающего javascript
+  document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  document.addEventListener('DOMContentLoaded', function(){
+    if (window.isMobile !== undefined) {
+      // console.log(isMobile);
+      if(isMobile.any) {
+        var rootClasses = ' is-mobile';
+        for (key in isMobile) {
+          if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+          if(typeof isMobile[key] === 'object' && key !== 'other') {
+            for (type in isMobile[key]) {
+              if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+            }
+          }
+        }
+        document.documentElement.className += rootClasses;
+      }
+    }
+    else {
+      console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+    }
+  });
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/site.webmanifest">
+<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
+<link rel="shortcut icon" href="/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body class="bg-dark">
+  <div class="page__inner">
+    <div class="page__content">
+      <header class="page-header" role="banner">
+        <div class="page-header__inner">
+          <a href="index.html" class="logo">
+            <img src="img/header-logo.png" width="355" height="90" alt="Green Rark">
+          </a>
+          <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a href="#" class="main-nav__link">
+                  О нас
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-portfolio.html" class="main-nav__link">
+                  Портфолио
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-news.html" class="main-nav__link">
+                  Новости
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#" class="main-nav__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="feedback">
+            <div class="phones phones--header">
+              <div class="phones__item"><a href="#">+7 950 511 51 51</a></div>
+              <div class="phones__item"><a href="#">+7 915 741 30 25</a></div>
+            </div>
+            <button class="btn btn--main-dark-outline">Заказать звонок</button>
+          </div>
+        </div>
+      </header>
+      <div class="headline">
+        <h1 class="headline__title">
+          <a href="#" class="back">
+            <svg class="icon" width="49" height="31">
+              <use xlink:href="img/sprite-svg.svg#icon-prev"/>
+            </svg>
+            <span>Назад</span>
+          </a>
+          <span>Новость</span>
+        </h1>
+      </div>
+      <main role="main" class="post">
+        <div class="post__poster">
+          <img src="img/post-poster.jpg" alt="">
+        </div>
+        <div class="post__content">
+          <h2 class="post__heading">ЗАКАТЫ В ВЕЧЕРНИХ АЛЛЕЯХ <span class="post__posted">15.01.2018</span></h2>
+          <p>Ступать мягкими бархатными туфлями по аллеям под августовским небом, проникаясь живой энергией сотворенной вокруг природы - это ли не счастье, не конечная цель создателя сада? Скорее одна из причин, почему русские сады и парки столь часто будоражили умы европейцев, окутывая их таинственной вуалью глубокого единения с природой. Оставаясь один на один с шелестом листьев, человек обращает взор в себя, знакомится с хозяином своего внутреннего мира и отчетливо слышит вибрацию своих самых сокровенных желаний, заглушаемых общественным долгом, повседневной суетой и шумом.Создание русских садов - это не просто садово-парковое искусство, это искусство передавать из поколения в поколение традицию ощущения свободы и умиротворения, погружения в зеленый музыкальный мир и создавать вокруг дома природный ландшафт, способный существовать и поддерживать жизнь растений в любой из нескольких климатических зон огромной страны с самой богатой флорой и фауной на земле.</p>
+          <div class="post__image">
+            <img src="img/post-image.jpg" alt="">
+          </div>
+          <h2>ЗАКАТЫ В ВЕЧЕРНИХ АЛЛЕЯХ</h2>
+          <p>Ступать мягкими бархатными туфлями по аллеям под августовским небом, проникаясь живой энергией сотворенной вокруг природы - это ли не счастье, не конечная цель создателя сада? Скорее одна из причин, почему русские сады и парки столь часто будоражили умы европейцев, окутывая их таинственной вуалью глубокого единения с природой. Оставаясь один на один с шелестом листьев, человек обращает взор в себя, знакомится с хозяином своего внутреннего мира и отчетливо слышит вибрацию своих самых сокровенных желаний, заглушаемых общественным долгом, повседневной суетой и шумом.Создание русских садов - это не просто садово-парковое искусство, это искусство передавать из поколения в поколение традицию ощущения свободы и умиротворения, погружения в зеленый музыкальный мир и создавать вокруг дома природный ландшафт, способный существовать и поддерживать жизнь растений в любой из нескольких климатических зон огромной страны с самой богатой флорой и фауной на земле.</p>
+        </div>
+        <div class="post__footer">
+          <a href="#" class="back">
+            <svg class="icon" width="49" height="31">
+              <use xlink:href="img/sprite-svg.svg#icon-prev"/>
+            </svg>
+            <span>Назад к списку новостей</span>
+          </a>
+          <div class="share">
+            <span>Поделиться:</span>
+            <ul class="share__list">
+              <li>
+                <a href="#">
+                  <svg class="icon" width="23" height="16">
+                    <use xlink:href="img/sprite-svg.svg#social-icon-vk"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="icon" width="13" height="20">
+                    <use xlink:href="img/sprite-svg.svg#social-icon-ok"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg class="icon" width="12" height="20">
+                    <use xlink:href="img/sprite-svg.svg#social-icon-fa"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="page__footer-wrapper">
+      <footer class="page-footer" role="contentinfo">
+        <div class="page-footer__part page-footer__part--top">
+          <div class="page-footer__inner">
+            <a href="#" class="logo">
+              <img src="img/footer-logo.png" width="304" height="50" alt="Green Rark">
+            </a>
+            <div class="feedback">
+              <div class="phones phones--footer">
+                <div class="phones__item"><a href="#">+7 950 511 51 51</a></div>
+                <div class="phones__item"><a href="#">+7 915 741 30 25</a></div>
+              </div>
+              <button class="btn btn--main-dark-outline">Заказать звонок</button>
+            </div>
+            <div class="social">
+              <a class="social__item" href="#">
+                <svg class="icon" width="45" height="28">
+                  <use xlink:href="img/sprite-svg.svg#social-icon-vk"/>
+                </svg>
+              </a>
+              <a class="social__item" href="#">
+                <svg class="icon" width="23" height="41">
+                  <use xlink:href="img/sprite-svg.svg#social-icon-fa"/>
+                </svg>
+              </a>
+              <a class="social__item" href="#">
+                <svg class="icon" width="32" height="32">
+                  <use xlink:href="img/sprite-svg.svg#social-icon-inst"/>
+                </svg>
+              </a>
+              <a class="social__item" href="#">
+                <svg class="icon" width="51" height="36">
+                  <use xlink:href="img/sprite-svg.svg#social-icon-you"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__part page-footer__part--copyright">
+          <div class="page-footer__inner">
+            <span>&copy; GreenPark 2018</span>
+            <span>Разработка - <a href="#">Showbiz Interactive</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="js/script.min.js"></script>
+</body>
+</html>
