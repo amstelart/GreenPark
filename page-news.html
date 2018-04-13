@@ -99,7 +99,7 @@
                   </a>
                 </div>
               </div>
-              <button class="btn btn--main-dark-outline">Заказать звонок</button>
+              <button class="btn btn--main-dark-outline" type="button" data-toggle="modal" data-target="#modal-request">Заказать звонок</button>
             </div>
             <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
           </nav>
@@ -278,7 +278,7 @@
                   </a>
                 </div>
               </div>
-              <button class="btn btn--main-dark-outline">Заказать звонок</button>
+              <button class="btn btn--main-dark-outline" type="button" data-toggle="modal" data-target="#modal-request">Заказать звонок</button>
             </div>
             <div class="social">
               <a class="social__item" href="#">
@@ -311,6 +311,47 @@
           </div>
         </div>
       </footer>
+
+      <div id="modal-request" class="modal" tabindex="-1" role="dialog">
+        <div class="modal__dialog" role="document">
+          <div class="modal__content">
+            <div class="modal__header">
+              <a href="#" class="close  modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></a>
+              <h4 class="modal__title">Оставить заявку</h4>
+            </div>
+            <div class="modal__body">
+              <form action="" class="form form--request">
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" placeholder="Ваше имя" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="email" placeholder="E-mail" id="" name="">
+                    </span>
+                  </label>
+                  <label class="field-text">
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="tel" placeholder="Телефон" id="" name="">
+                    </span>
+                  </label>
+                  <div class="field-actions">
+                    <button class="btn btn--main-dark">Оставить заявку</button>
+                  </div>
+                  <div class="field-checkbox">
+                    <label class="field-checkbox__name">
+                      <input class="field-checkbox__input" type="checkbox" id="" name="" checked="">
+                      <span class="field-checkbox__name-text">Я принимаю условия передачи данных</span>
+                    </label>
+                  </div>
+                </form>
+            </div>
+            <div class="modal__footer">
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
