@@ -60,6 +60,10 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   color: $text-color;
+
+  @media (max-width: ($screen-md - 1)) {
+    font-size: 14px;
+  }
 }
 
 // .h1,

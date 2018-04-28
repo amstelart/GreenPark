@@ -58,7 +58,8 @@
     "embed-responsive": [],
     "pie-chart": [],
     "fields-group": [],
-    "tooltip": []
+    "tooltip": [],
+    "phones": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -31,7 +31,7 @@ $z-index-modal:               100 !default;
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: $z-index-modal;
+  z-index: 1000;
   -webkit-overflow-scrolling: touch;
 
   .js-modal-open & {
@@ -61,8 +61,14 @@ $z-index-modal:               100 !default;
     flex-direction: column;
     min-width: 100%;
     min-height: 100%;
-    background-color: #fff;
+    padding: 25px 40px;
+    background-color: $color-main;
     outline: 0;
+
+    background-image: url('../img/tree.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 260% 10px;
   }
 
   &__header {
@@ -73,7 +79,7 @@ $z-index-modal:               100 !default;
   &__title {
     margin-top: ($line-height / 2);
     margin-bottom: ($line-height / 2);
-    font-size: $font-size--h4;
+    font-size: 32px;
     line-height: 1.4;
     font-weight: 700;
     color: currentColor;
@@ -83,6 +89,12 @@ $z-index-modal:               100 !default;
     position: absolute !important; // stylelint-disable-line  declaration-no-important
     top: 5px;
     right: 5px;
+
+    span:before,
+    span:after {
+      background: #393837 !important;
+      height: 2px !important;
+    }
   }
 
   &__body {

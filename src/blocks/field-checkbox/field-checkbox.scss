@@ -36,6 +36,8 @@ $line-height:                 1.375em !default;
 
   &__name-text {
 
+    color: #5e5b58;
+
     // свой чекбокс с картинкой
 
     // &:before {
@@ -79,8 +81,8 @@ $line-height:                 1.375em !default;
       width: 14px;
       height: 6px;
       opacity: 0;
-      border-left: 2px solid currentColor;
-      border-bottom: 2px solid currentColor;
+      border-left: 2px solid $color-main;
+      border-bottom: 2px solid $color-main;
       transform: rotate(-45deg);
       transition: opacity $transition-time;
 

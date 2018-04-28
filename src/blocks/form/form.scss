@@ -34,4 +34,59 @@ $line-height:                 1.375em !default;
     line-height: $line-height;
     color: currentColor;
   }
+
+  &--contact {
+    @include row;
+
+    .field-text,
+    .field-actions {
+      @include col();
+      @include col(md, 6);
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .field-checkbox {
+      @include col();
+    }
+  }
+
+  &--request {
+    @include row;
+
+    .field-text,
+    .field-actions {
+      @include col();
+      @include col(md, 6);
+      margin-top: 0;
+      margin-bottom: 20px;
+
+      button {
+        width: 100%;
+      }
+    }
+
+    .field-checkbox {
+      @include col();
+    }
+
+    .field-text__input {
+      color: #000;
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+    .field-checkbox__name-text:before {
+      border-color: #393837;
+      background: #393837;
+    }
+    .field-checkbox__name-text:after {
+      border-color: #d3be84;
+    }
+  }
 }

@@ -23,6 +23,18 @@ $transition-time:             0.3s !default;
 
   position: relative;
   z-index: 10;
+  position: relative;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  // @media (max-width: ($menu-desktop-width - 1)) {
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  // }
 
   // первый уровень
   &__list {
@@ -33,6 +45,13 @@ $transition-time:             0.3s !default;
     // мобильный вид списка
     @media (max-width: ($menu-desktop-width - 1)) {
 
+
+      position: absolute;
+      left: 0;
+      top: 90px;
+      width: 100%;
+      background: $color-dark;
+      text-transform: uppercase;
       // открытие/закрытие меню только в случае работающего JS
 
       .js & {
@@ -47,10 +66,16 @@ $transition-time:             0.3s !default;
       }
     }
 
+    @media (max-width: ($screen-lg)) {
+      top: 57px;
+    }
+
     // настольный вид списка
     @media (min-width: $menu-desktop-width) {
       display: flex;
       flex-wrap: wrap;
+      font-size: 18px;
+      text-transform: uppercase;
     }
   }
 
@@ -60,21 +85,38 @@ $transition-time:             0.3s !default;
     &--active {
 
       & > #{$block-name}__link {
-        color: #000;
+        color: #fff;
+      }
+    }
+
+    @media (min-width: $menu-desktop-width) {
+      margin: 0 5px;
+    }
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+      &:not(:last-child) {
+        border-bottom: 1px solid lighten($color-dark, 10%);
       }
     }
   }
 
   &__link {
+    color: #635c4c;
     display: block;
     padding: 0.5em;
     text-decoration: none;
-    background-color: #fff;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
+      color: $color-main;
+      background-color: transparent;
+    }
+
+    @media (max-width: ($menu-desktop-width - 1)) {
+      padding: 1em 0.5em;
     }
 
     &--lvl-2 {
@@ -150,6 +192,8 @@ $transition-time:             0.3s !default;
     padding: 0;
     background: none;
     border: none;
+    margin-right: 15px;
+    outline: none;
 
     .no-js & {
       display: none;

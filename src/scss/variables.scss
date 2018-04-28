@@ -12,7 +12,10 @@ $gray-lighter:                hsl(0, 0%, 80%);
 $gray-lightest:               hsl(0, 0%, 90%);
 $white:                       hsl(0, 0%, 100%);
 
-$color-main:                  hsl(208, 98%, 43%);
+$color-main:                  #d3be84;
+$color-main-dark:             #635c4c;
+$color-main-dark-2:           #64615e;
+$color-dark:                  #232221;
 $color-success:               hsl(120, 39%, 54%);
 $color-danger:                hsl(2, 64%, 58%);
 $color-warning:               hsl(35, 84%, 62%);
@@ -34,7 +37,7 @@ $border-color:                $gray-light;
 
 // Базовая типографика
 
-$font-size:                   14px;
+$font-size:                   16px;
 $font-size--h1:               2.25em;
 $font-size--h2:               1.875em;
 $font-size--h3:               1.5em;
@@ -45,10 +48,10 @@ $font-size--small:            0.75em;
 
 $line-height:                 1.375em;
 
-$font-family:                 -apple-system, BlinkMacSystemFont, 'Roboto', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', 'Arial', sans-serif;
+$font-family:                 'Raleway', 'Arial', sans-serif;
+$font-family--headings:       'GoudyOld';
 $font-family--serif:          'Georgia', 'Times New Roman', 'Times', serif;
 $font-family--monospace:      'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
-$font-family--headings:       $font-family;
 
 
 
@@ -59,7 +62,7 @@ $screen-sm:                   480px;
 $screen-md:                   768px;
 $screen-lg:                   992px;
 $screen-xl:                   1200px;
-$screen-xxl:                  1800px;
+$screen-xxl:                  1200px;
 
 $container-sm:                100%;
 $container-md:                100%;
@@ -78,8 +81,8 @@ $grid-gutter-width:           30px;
 
 // Разное
 
-$field-padding-vertical:      0.3em;
-$field-padding-horizontal:    0.7em;
+$field-padding-vertical:      1em;
+$field-padding-horizontal:    1.3em;
 
 $border-radius:               3px;
 $opacity:                     0.7;
@@ -87,7 +90,7 @@ $transition-time:             0.3s;
 $shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
 
 $menu-desktop-width:          $screen-xl;
-$toggler-part-height:         3px;
-$toggler-part-bg-color:       #000;
+$toggler-part-height:         4px;
+$toggler-part-bg-color:       $color-main;
 
 $z-index-modal:               100;
